@@ -24,17 +24,21 @@ export default function page() {
           <Link href={'#experience'}>
             <h1 className="text-6xl text-primary font-bold mt-4 mb-12">Experience</h1>
           </Link>
-          <div className="px-4">
-            <Experience />
+          <div className="">
+            <Link href={"https://www.codelabdavis.com/"}>
+              <Experience company={"CodeLab"} position={"Full-Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
+            </Link>
           </div>
         </div>
       </div>
 
-      <div id="projects">
+      <div id="projects" className="flex justify-center">
+        <div>
           <Link href={'#projects'}>
-            <h1 className="text-6xl text-primary font-bold my-4">Projects</h1>
-          </Link>
-        <p>Some of my projects</p>
+              <h1 className="text-6xl text-primary font-bold my-4">Projects</h1>
+            </Link>
+          <p>Some of my projects</p>
+        </div>
       </div>
 
       <div id="skills">
