@@ -1,3 +1,4 @@
+import Experience from "@/components/Experience";
 import Navbar from "@/components/Navbar";
 import RetroGrid from "@/components/RetroGrid";
 import Link from "next/link";
@@ -18,13 +19,13 @@ export default function page() {
         <RetroGrid className=""/>
       </div>
 
-      <div id="experience" className="w-3/5 justify-center mx-10 flex my-10">
-        <div className="border-l-2 border-my_blue p-4">
+      <div id="experience" className="justify-center mx-10 flex my-10">
+        <div className="w-3/5 border-l-2 border-my_blue p-4">
           <Link href={'#experience'}>
-            <h1 className="text-6xl text-primary font-bold my-4">Experience</h1>
+            <h1 className="text-6xl text-primary font-bold mt-4 mb-12">Experience</h1>
           </Link>
           <div className="px-4">
-            <p>These are my experiences</p>
+            <Experience />
           </div>
         </div>
       </div>
