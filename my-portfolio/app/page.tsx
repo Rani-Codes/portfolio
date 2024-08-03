@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import { BentoGridProjects } from "@/components/projects";
 import Navbar from "@/components/Navbar";
 import RetroGrid from "@/components/RetroGrid";
 import Link from "next/link";
@@ -26,18 +27,18 @@ export default function page() {
           </Link>
           <div className="">
             <Link href={"https://www.codelabdavis.com/"}>
-              <Experience company={"CodeLab"} position={"Full-Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
+              <Experience company={"CodeLab"} position={"Full Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
             </Link>
           </div>
         </div>
       </div>
 
-      <div id="projects" className="flex justify-center">
+      <div id="projects" className="flex justify-center text-center bg-plain">
         <div>
           <Link href={'#projects'}>
               <h1 className="text-6xl text-primary font-bold my-4">Projects</h1>
             </Link>
-          <p>Some of my projects</p>
+            <BentoGridProjects />
         </div>
       </div>
 
