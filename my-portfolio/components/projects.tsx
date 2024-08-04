@@ -16,15 +16,14 @@ export function BentoGridProjects() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
-        <Link href={item.link} key={i} passHref target="_blank">
-          <BentoGridItem
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            className={item.className}
-            icon={item.icon}
-          />
-        </Link>
+        <BentoGridItem
+          key={i}
+          title={item.title}
+          description={item.description}
+          header={item.header}
+          className={item.className}
+          icon={item.icon}
+        />
       ))}
     </BentoGrid>
   );
@@ -36,35 +35,37 @@ const items = [
   {
     title: "Todo List",
     description: "A full stack web app created independently to learn FastAPI and implement user authentication.",
-    header: <Image
-                src={todo}
-                alt="Image of the todo app homepage"
-                className="flex flex-1 w-full h-full min-h-[6rem]"
-                />,
+    header: <Link href={"https://github.com/Rani-Codes/learningFastAPI"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+                <Image
+                    src={todo}
+                    alt="Image of the todo app homepage"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
     className: "md:col-span-2",
-    icon: <div className="flex gap-4 items-center">
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
         <Image src={Tailwind_Logo} alt="Tailwind CSS logo" className="w-auto h-3" />
         <Image src={NextJS_Logo} alt="Next.JS logo" className="w-auto h-3" />
         <Image src={SQLite_Logo} alt="SQLite logo" className="w-auto h-6" />
         <Image src={PostgreSQL_Logo} alt="PostgreSQL logo" className="w-auto h-6" />
         <Image src={FastAPI_Logo} alt="PostgreSQL logo" className="w-auto h-8" />
-    </div>,
-    link: "https://github.com/Rani-Codes/learningFastAPI"
+    </div>
   },
   {
     title: "Detecting Heart Disease/Attack With Supervised Learning",
     description: "Led the frontend development, overseeing two developers, and successfully trained an initial random forest model.",
-    header: <Image
-                src={heartDiseaseProject}
-                alt="Image of the heart disease risk detector app homepage"
-                className="flex flex-1 w-full h-full min-h-[6rem]"
-                />,
+    header: <Link href={"/ECS170ProjectReport.pdf"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]">
+                <Image
+                    src={heartDiseaseProject}
+                    alt="Image of the heart disease risk detector app homepage"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
     className: "md:col-span-1",
-    icon: <div className="flex gap-4 items-center">
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
         <Image src={Tailwind_Logo} alt="Tailwind CSS logo" className="w-auto h-3" />
         <Image src={React_Logo} alt="React logo" className="w-auto h-6" />
         <Image src={Jupyter_Logo} alt="Jupyter Notebook logo" className="w-auto h-8" />
-    </div>,
-    link: "/ECS170ProjectReport.pdf"
+    </div>
   },
 ];

@@ -20,17 +20,17 @@ export default function page() {
         <RetroGrid className=""/>
       </div>
 
-      <div id="experience" className="justify-center mx-10 flex my-10">
-        <div className="w-3/5 border-l-2 border-my_blue p-4">
+      <div id="experience" className="justify-center mx-10 flex py-10">
+        <div className="sm:w-10/12 lg:w-3/5 sm:border-l-2 sm:border-my_blue sm:p-4">
           <Link href={'#experience'}>
-            <h1 className="text-6xl text-primary font-bold mt-4 mb-8">Experience</h1>
+            <h1 className="text-5xl sm:text-6xl text-primary font-bold mt-4 mb-8">Experience</h1>
           </Link>
           <div className="flex flex-col gap-8">
             <Link href={"https://www.codelabdavis.com/"} target="_blank">
               <Experience company={"CodeLab"} position={"Full Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
             </Link>
             <Link href={"https://www.grossmont.edu/"} target="_blank">
-              <Experience company={"Computer Science Club at Grossmont College"} position={"President"} date="Sep 2022 - Jun 2023" logo={"/GrossmontCollege_Logo.png"}/>
+              <Experience company={"Computer Science Club, Grossmont College"} position={"President"} date="Sep 2022 - Jun 2023" logo={"/GrossmontCollege_Logo.png"}/>
             </Link>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function page() {
       <div id="projects" className="flex justify-center text-center bg-plain py-10">
         <div>
           <Link href={'#projects'}>
-              <h1 className="text-6xl text-primary font-bold my-6">Projects</h1>
+              <h1 className="text-5xl sm:text-6xl text-primary font-bold my-6">Projects</h1>
             </Link>
             <BentoGridProjects />
         </div>
@@ -47,15 +47,15 @@ export default function page() {
 
       <div id="skills">
         <Link href={'#skills'}>
-            <h1 className="text-6xl text-primary font-bold my-4">Skills</h1>
-          </Link>
+          <h1 className="text-5xl sm:text-6xl text-primary font-bold my-4">Skills</h1>
+        </Link>
         <p>List of skills</p>
       </div>
 
       <div id="about">
         <Link href={'#about'}>
-            <h1 className="text-6xl text-primary font-bold my-4">About me</h1>
-          </Link>
+        <h1 className="text-5xl sm:text-6xl text-primary font-bold my-4">About me</h1>
+        </Link>
         <p>About me section content</p>
       </div>
 
