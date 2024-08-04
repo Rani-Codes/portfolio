@@ -23,20 +23,23 @@ export default function page() {
       <div id="experience" className="justify-center mx-10 flex my-10">
         <div className="w-3/5 border-l-2 border-my_blue p-4">
           <Link href={'#experience'}>
-            <h1 className="text-6xl text-primary font-bold mt-4 mb-12">Experience</h1>
+            <h1 className="text-6xl text-primary font-bold mt-4 mb-8">Experience</h1>
           </Link>
-          <div className="">
-            <Link href={"https://www.codelabdavis.com/"}>
+          <div className="flex flex-col gap-8">
+            <Link href={"https://www.codelabdavis.com/"} target="_blank">
               <Experience company={"CodeLab"} position={"Full Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
+            </Link>
+            <Link href={"https://www.grossmont.edu/"} target="_blank">
+              <Experience company={"Computer Science Club at Grossmont College"} position={"President"} date="Sep 2022 - Jun 2023" logo={"/GrossmontCollege_Logo.png"}/>
             </Link>
           </div>
         </div>
       </div>
 
-      <div id="projects" className="flex justify-center text-center bg-plain">
+      <div id="projects" className="flex justify-center text-center bg-plain py-10">
         <div>
           <Link href={'#projects'}>
-              <h1 className="text-6xl text-primary font-bold my-4">Projects</h1>
+              <h1 className="text-6xl text-primary font-bold my-6">Projects</h1>
             </Link>
             <BentoGridProjects />
         </div>
