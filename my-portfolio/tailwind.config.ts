@@ -21,7 +21,6 @@ const config: Config = {
         primary: "#232323",
         secondary: "#222525",
         my_blue: "#078080",
-        my_orange: "#f45d48",
         plain: "#f8f5f2",
       },
     },
