@@ -52,7 +52,7 @@ const items = [
     </div>
   },
   {
-    title: "Detecting Heart Disease/Attack With Supervised Learning",
+    title: "Detecting Heart Disease With Supervised Learning",
     description: "Led the frontend development, overseeing two developers, and successfully trained an initial random forest model.",
     header: <Link href={"/ECS170ProjectReport.pdf"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]">
                 <Image

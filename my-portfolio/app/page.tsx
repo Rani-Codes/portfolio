@@ -3,6 +3,7 @@ import { BentoGridProjects } from "@/components/projects";
 import Navbar from "@/components/Navbar";
 import RetroGrid from "@/components/RetroGrid";
 import Link from "next/link";
+import Skills from "@/components/skills";
 
 export default function page() {
   return (
@@ -45,18 +46,21 @@ export default function page() {
         </div>
       </div>
 
-      <div id="skills">
-        <Link href={'#skills'}>
-          <h1 className="text-5xl sm:text-6xl text-primary font-bold my-4">Skills</h1>
-        </Link>
-        <p>List of skills</p>
-      </div>
+      <div className="grid grid-cols-2 mx-32 justify-center my-4">
 
-      <div id="about">
-        <Link href={'#about'}>
-        <h1 className="text-5xl sm:text-6xl text-primary font-bold my-4">About me</h1>
-        </Link>
-        <p>About me section content</p>
+        <div id="about" className="">
+          <Link href={'#about'}>
+          <h1 className="text-2xl sm:text-4xl text-primary font-bold my-4">About me</h1>
+          </Link>
+          <p>About me section content</p>
+        </div>
+
+        <div id="skills" className="flex flex-col">
+          <Link href={'#skills'} className="w-fit">
+            <h1 className="text-2xl sm:text-4xl text-primary font-bold mt-4">Skills</h1>
+          </Link>
+          <Skills/>
+        </div>
       </div>
 
     </div>
