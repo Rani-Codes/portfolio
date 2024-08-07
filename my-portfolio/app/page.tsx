@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import RetroGrid from "@/components/RetroGrid";
 import Link from "next/link";
 import Skills from "@/components/skills";
+import { DockContacts } from "@/components/dock_contacts";
 
 export default function page() {
   return (
@@ -14,8 +15,12 @@ export default function page() {
           Rani Saro
         </span>
         <div className="relative w-full flex justify-center z-10 gap-10">
-          <button className="text-xl text-plain my-4 bg-primary p-2 rounded-lg">My resume</button>
-          <button className="text-xl text-primary my-4 bg-primary p-2 rounded-lg bg-opacity-20">Contact me</button>
+          <a href="/Rani_Saro_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="text-xl text-plain my-4 bg-primary p-2 rounded-lg">My resume</button>
+          </a>
+          <Link href={'#contacts'}>
+            <button className="text-xl text-primary my-4 bg-primary p-2 rounded-lg bg-opacity-20">Contact me</button>
+          </Link>
         </div>
 
         <RetroGrid className=""/>
@@ -24,7 +29,7 @@ export default function page() {
       <div id="experience" className="justify-center mx-10 flex py-10">
         <div className="sm:w-10/12 lg:w-3/5 sm:border-l-2 sm:border-my_blue sm:p-4">
           <Link href={'#experience'}>
-            <h1 className="text-5xl sm:text-6xl text-primary font-bold mt-4 mb-8">Experience</h1>
+            <h1 className="text-4xl sm:text-5xl text-primary font-bold mt-4 mb-8">Experience</h1>
           </Link>
           <div className="flex flex-col gap-8">
             <Link href={"https://www.codelabdavis.com/"} target="_blank">
@@ -37,24 +42,24 @@ export default function page() {
         </div>
       </div>
 
-      <div id="projects" className="flex justify-center text-center bg-plain py-10">
+      <div id="projects" className="flex justify-center text-center bg-plain pt-10 pb-20">
         <div>
           <Link href={'#projects'}>
-              <h1 className="text-5xl sm:text-6xl text-primary font-bold my-6">Projects</h1>
+              <h1 className="text-4xl sm:text-5xl text-primary font-bold my-6">Projects</h1>
             </Link>
             <BentoGridProjects />
         </div>
       </div>
 
-      <div id="about" className="flex flex-col w-full items-center justify-center my-16">
+      <div id="about" className="flex flex-col w-full items-center justify-center my-12">
       <Link href={'#about'}>
-        <h2 className="text-5xl font-bold">About Me</h2>
+        <h2 className="text-5xl text-primary font-bold mt-6">About Me</h2>
         </Link>
         <span className="w-1/12 my-4 border-b-4 rounded border-my_blue" />
         <h4 className="text-lg text-secondary font-medium w-3/5 text-center">Below you will find some more information about me as well as a highlight of some of my technical skills.</h4>
       </div>
 
-      <div className="grid grid-cols-2 mx-32 justify-center mb-28">
+      <div className="grid grid-cols-2 mx-32 mb-28">
         <div>
           <h1 className="text-2xl sm:text-4xl text-primary font-semibold">A Bit About Me</h1>
           <p className="text-wrap text-lg w-4/5">
@@ -68,13 +73,18 @@ export default function page() {
             and camping/hiking. These interests keep me balanced and grounded while I explore 
             the fast-paced world of technology.
           </p>
-
+          <div className="flex w-full my-2 gap-6">
+            <h3 className="py-10 text-3xl font-semibold">Contact Me!</h3>
+            <DockContacts/>
+          </div>
         </div>
 
-        <div className="flex flex-col">
+        <div id="contacts" className="flex flex-col">
           <h1 className="text-2xl sm:text-4xl text-primary font-semibold">Skills</h1>
           <Skills/>
         </div>
+
+
       </div>
 
     </div>
