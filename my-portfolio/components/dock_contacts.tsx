@@ -13,14 +13,14 @@ export function DockContacts() {
             <Icons.gitHub className="size-6 sm:size-12" />
           </DockIcon>
         </a>
-        <a href="https://www.linkedin.com/in/ranisaro/" target="_blank" rel="noopener noreferrer">
-        <DockIcon>
-          <Icons.linkedIn className="size-6 sm:size-12" />
-        </DockIcon>
-        </a>
         <a href="mailto:ranisarowork@gmail.com">
         <DockIcon>
           <Icons.email className="size-6 sm:size-12" />
+        </DockIcon>
+        </a>
+        <a href="https://www.linkedin.com/in/ranisaro/" target="_blank" rel="noopener noreferrer">
+        <DockIcon>
+          <Icons.linkedIn className="size-6 sm:size-12" />
         </DockIcon>
         </a>
       </Dock>

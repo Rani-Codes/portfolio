@@ -56,13 +56,13 @@ export default function page() {
         <h2 className="text-4xl sm:text-5xl text-primary font-bold mt-6">About Me</h2>
         </Link>
         <span className="w-1/12 my-4 border-b-4 rounded border-my_blue" />
-        <h4 className="text-sm sm:text-lg text-secondary font-medium w-3/5 text-center">Below you will find some more information about me as well as a highlight of some of my technical skills.</h4>
+        <h4 className="text-sm sm:text-base md:text-lg text-secondary font-medium w-3/5 sm:w-4/5 md:w-3/5 text-center">Below you will find some more information about me as well as a highlight of some of my technical skills.</h4>
       </div>
 
-      <div className="flex flex-col-reverse gap-14 sm:gap-0 sm:grid sm:grid-cols-2 sm:mx-32 mb-28">
+      <div className="flex flex-col-reverse gap-14 lg:gap-0 lg:grid lg:grid-cols-2 lg:mx-12 xl:mx-28 2xl:mx-32 mb-28">
         <div>
-          <h1 className="text-center text-2xl sm:text-left sm:text-4xl text-primary font-semibold">A Bit About Me</h1>
-          <p className="text-wrap w-full p-2 sm:p-0 text-sm sm:text-lg sm:w-4/5">
+          <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-left text-primary font-semibold">A Bit About Me</h1>
+          <p className="text-wrap w-full p-2 text-sm sm:text-lg lg:p-0 lg:w-4/5">
             Driven by a deep sense of curiosity about the endless applications of technology, 
             I'm a full-stack developer with a special focus on AI/ML. I'm currently a fourth-year 
             computer science student at the <strong>University of California, Davis</strong>, 
@@ -73,14 +73,14 @@ export default function page() {
             and camping/hiking. These interests keep me balanced and grounded while I explore 
             the fast-paced world of technology.
           </p>
-          <div id="contacts" className="flex flex-col justify-center sm:flex-row sm:justify-start items-center my-0 gap-0 w-full sm:my-2 sm:gap-6">
-            <h3 className="pt-4 text-xl sm:py-10 sm:text-3xl font-semibold">Contact Me!</h3>
+          <div id="contacts" className="flex flex-col justify-center md:flex-row md:my-2 md:gap-6 lg:justify-start items-center my-0 gap-0 w-full">
+            <h3 className="pt-4 text-xl sm:text-2xl md:py-10 md:text-3xl font-semibold">Contact Me!</h3>
             <DockContacts/>
           </div>
         </div>
 
         <div className="flex flex-col">
-          <h1 className="text-center text-2xl sm:text-left sm:text-4xl text-primary font-semibold">Skills</h1>
+          <h1 className="text-center text-2xl sm:text-3xl md:text-4xl text-primary font-semibold">Skills</h1>
           <Skills/>
         </div>
 
