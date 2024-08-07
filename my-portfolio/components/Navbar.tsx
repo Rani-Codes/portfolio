@@ -1,9 +1,10 @@
+"use client"
 import Link from "next/link"
 
 const Navbar = () => {
   return(
-    <div className="w-full flex justify-center mt-4 fixed z-20">
-        <ul className="flex justify-evenly w-2/5 p-2 text-lg text-primary backdrop-blur bg-opacity-70 bg-white border border-secondary rounded-xl">
+    <nav className="w-full flex justify-center mt-2 sm:mt-4 fixed z-20">
+        <ul className={`flex justify-evenly p-2 w-full border border-secondary text-xs sm:text-sm sm:w-4/5 lg:text-base lg:w-3/5 xl:text-lg text-primary backdrop-blur bg-opacity-70 bg-white rounded sm:rounded-xl`}>
             <li>
                 <Link href="#home">Home</Link>
             </li>
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <Link href="#about">About Me</Link>
             </li>
         </ul>
-    </div>
+    </nav>
   )
 }
 export default Navbar
