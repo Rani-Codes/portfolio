@@ -7,20 +7,20 @@ export type IconProps = React.HTMLAttributes<SVGElement>;
 export function DockContacts() {
   return (
     <div className="relative">
-      <Dock direction="middle" className="gap-10 h-auto">
+      <Dock direction="middle" className="gap-6 sm:gap-10 h-auto">
         <a href="https://github.com/Rani-Codes" target="_blank" rel="noopener noreferrer">
           <DockIcon>
-            <Icons.gitHub className="size-12" />
+            <Icons.gitHub className="size-6 sm:size-12" />
           </DockIcon>
         </a>
         <a href="https://www.linkedin.com/in/ranisaro/" target="_blank" rel="noopener noreferrer">
         <DockIcon>
-          <Icons.linkedIn className="size-12" />
+          <Icons.linkedIn className="size-6 sm:size-12" />
         </DockIcon>
         </a>
         <a href="mailto:ranisarowork@gmail.com">
         <DockIcon>
-          <Icons.email className="size-12" />
+          <Icons.email className="size-6 sm:size-12" />
         </DockIcon>
         </a>
       </Dock>

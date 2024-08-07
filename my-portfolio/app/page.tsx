@@ -16,10 +16,10 @@ export default function page() {
         </span>
         <div className="relative w-full flex justify-center z-10 gap-10">
           <a href="/Rani_Saro_Resume.pdf" target="_blank" rel="noopener noreferrer">
-            <button className="text-xl text-plain my-4 bg-primary p-2 rounded-lg">My resume</button>
+            <button className="text-base sm:text-xl text-plain my-4 bg-primary p-2 rounded-lg">My resume</button>
           </a>
           <Link href={'#contacts'}>
-            <button className="text-xl text-primary my-4 bg-primary p-2 rounded-lg bg-opacity-20">Contact me</button>
+            <button className="text-base sm:text-xl text-primary my-4 bg-primary p-2 rounded-lg bg-opacity-20">Contact me</button>
           </Link>
         </div>
 
@@ -53,16 +53,16 @@ export default function page() {
 
       <div id="about" className="flex flex-col w-full items-center justify-center my-12">
       <Link href={'#about'}>
-        <h2 className="text-5xl text-primary font-bold mt-6">About Me</h2>
+        <h2 className="text-4xl sm:text-5xl text-primary font-bold mt-6">About Me</h2>
         </Link>
         <span className="w-1/12 my-4 border-b-4 rounded border-my_blue" />
-        <h4 className="text-lg text-secondary font-medium w-3/5 text-center">Below you will find some more information about me as well as a highlight of some of my technical skills.</h4>
+        <h4 className="text-sm sm:text-lg text-secondary font-medium w-3/5 text-center">Below you will find some more information about me as well as a highlight of some of my technical skills.</h4>
       </div>
 
-      <div className="grid grid-cols-2 mx-32 mb-28">
+      <div className="flex flex-col-reverse gap-14 sm:gap-0 sm:grid sm:grid-cols-2 sm:mx-32 mb-28">
         <div>
-          <h1 className="text-2xl sm:text-4xl text-primary font-semibold">A Bit About Me</h1>
-          <p className="text-wrap text-lg w-4/5">
+          <h1 className="text-center text-2xl sm:text-left sm:text-4xl text-primary font-semibold">A Bit About Me</h1>
+          <p className="text-wrap w-full p-2 sm:p-0 text-sm sm:text-lg sm:w-4/5">
             Driven by a deep sense of curiosity about the endless applications of technology, 
             I'm a full-stack developer with a special focus on AI/ML. I'm currently a fourth-year 
             computer science student at the <strong>University of California, Davis</strong>, 
@@ -73,14 +73,14 @@ export default function page() {
             and camping/hiking. These interests keep me balanced and grounded while I explore 
             the fast-paced world of technology.
           </p>
-          <div className="flex w-full my-2 gap-6">
-            <h3 className="py-10 text-3xl font-semibold">Contact Me!</h3>
+          <div id="contacts" className="flex flex-col justify-center sm:flex-row sm:justify-start items-center my-0 gap-0 w-full sm:my-2 sm:gap-6">
+            <h3 className="pt-4 text-xl sm:py-10 sm:text-3xl font-semibold">Contact Me!</h3>
             <DockContacts/>
           </div>
         </div>
 
-        <div id="contacts" className="flex flex-col">
-          <h1 className="text-2xl sm:text-4xl text-primary font-semibold">Skills</h1>
+        <div className="flex flex-col">
+          <h1 className="text-center text-2xl sm:text-left sm:text-4xl text-primary font-semibold">Skills</h1>
           <Skills/>
         </div>
 
