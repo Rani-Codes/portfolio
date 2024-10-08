@@ -10,6 +10,9 @@ import PostgreSQL_Logo from "@/assets/PostgreSQL.png"
 import FastAPI_Logo from "@/assets/FastAPI.png"
 import React_Logo from "@/assets/ReactLogo.png"
 import Jupyter_Logo from "@/assets/JupyterLogo.png"
+import FirebaseLogo from "@/assets/FirebaseLogo.png"
+import Occurrence_App from '@/assets/Occurrence_App.png'
+import ScavangerHunt from '@/assets/ScavangerHunt.png'
 import Link from "next/link";
 
 export function BentoGridProjects() {
@@ -42,7 +45,7 @@ const items = [
                     className="flex flex-1 w-full h-full min-h-[6rem]"
                     />
             </Link>,
-    className: "md:col-span-2",
+    className: "md:col-span-2 p-2 m-3 sm:m-0",
     icon: <div className="flex flex-wrap gap-2 items-center justify-center">
         <Image src={Tailwind_Logo} alt="Tailwind CSS logo" className="w-auto h-3" />
         <Image src={NextJS_Logo} alt="Next.JS logo" className="w-auto h-3" />
@@ -61,11 +64,45 @@ const items = [
                     className="flex flex-1 w-full h-full min-h-[6rem]"
                     />
             </Link>,
-    className: "md:col-span-1",
+    className: "md:col-span-1 p-2 m-3 sm:m-0",
     icon: <div className="flex flex-wrap gap-2 items-center justify-center">
         <Image src={Tailwind_Logo} alt="Tailwind CSS logo" className="w-auto h-3" />
         <Image src={React_Logo} alt="React logo" className="w-auto h-6" />
         <Image src={Jupyter_Logo} alt="Jupyter Notebook logo" className="w-auto h-8" />
+    </div>
+  },
+  {
+    title: "Scavenger Hunt AggieWorks",
+    description: "Developed a full stack scavanger hunt project to join AggieWorks, a product development club at UC Davis",
+    header: <Link href={"https://github.com/Rani-Codes/scavenger-hunt-aggieworks"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]">
+                <Image
+                    src={ScavangerHunt}
+                    alt="Image of the heart disease risk detector app homepage"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
+    className: "md:col-span-1 p-2 m-3 sm:m-0",
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
+        <Image src={NextJS_Logo} alt="Next.JS logo" className="w-auto h-3" />
+        <Image src={SQLite_Logo} alt="SQLite logo" className="w-auto h-6" />
+        <Image src={FastAPI_Logo} alt="PostgreSQL logo" className="w-auto h-8" />
+    </div>
+  },
+  {
+    title: "Occurrence Trivia",
+    description: "A trivia app centered around guessing the correct month and year of images taken.",
+    header: <Link href={"https://occurrence-ten.vercel.app/"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+                <Image
+                    src={Occurrence_App}
+                    alt="Image of the todo app homepage"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
+    className: "md:col-span-2 p-2 m-3 sm:m-0",
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
+        <Image src={Tailwind_Logo} alt="Tailwind CSS logo" className="w-auto h-3" />
+        <Image src={NextJS_Logo} alt="Next.JS logo" className="w-auto h-3" />
+        <Image src={FirebaseLogo} alt="SQLite logo" className="w-auto h-16" />
     </div>
   },
 ];

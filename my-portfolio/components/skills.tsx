@@ -25,7 +25,7 @@ const Skills = () => {
             <li><One_Skill skill="FastAPI"/></li>
             <li><One_Skill skill="Postman"/></li>
             <li><One_Skill skill="Next.js"/></li>
-            <li><One_Skill skill="Slack"/></li>
+            <li><One_Skill skill="Firebase"/></li>
             <li><One_Skill skill="PostgreSQL"/></li>
             <li><One_Skill skill="Tailwind"/></li>
         </ul>

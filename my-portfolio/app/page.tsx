@@ -14,12 +14,12 @@ export default function page() {
         <span className="pointer-events-none w-full z-10 whitespace-pre-wrap bg-primary bg-clip-text text-center text-5xl sm:text-8xl font-bold leading-none tracking-tighter text-transparent">
           Rani Saro
         </span>
-        <div className="relative w-full flex justify-center z-10 gap-10">
+        <div className="relative w-full flex justify-center z-10 gap-10 my-4">
           <a href="/Rani_Saro_Resume.pdf" target="_blank" rel="noopener noreferrer">
-            <button className="text-base sm:text-xl text-plain my-4 bg-primary p-2 rounded-lg">My resume</button>
+            <button className="text-base sm:text-xl text-plain bg-primary p-3 rounded-lg hover:bg-opacity-90">My resume</button>
           </a>
           <Link href={'#contacts'}>
-            <button className="text-base sm:text-xl text-primary my-4 bg-primary p-2 rounded-lg bg-opacity-20">Contact me</button>
+            <button className="text-base sm:text-xl text-primary bg-primary p-3 rounded-lg bg-opacity-20 hover:bg-opacity-30">Contact me</button>
           </Link>
         </div>
 
