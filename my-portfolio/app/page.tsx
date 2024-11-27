@@ -5,6 +5,7 @@ import RetroGrid from "@/components/RetroGrid";
 import Link from "next/link";
 import Skills from "@/components/skills";
 import { DockContacts } from "@/components/dock_contacts";
+import Contact_Me from "@/components/contact_me";
 
 export default function page() {
   return (
@@ -18,9 +19,7 @@ export default function page() {
           <a href="/Rani_Saro_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <button className="text-base sm:text-xl text-plain bg-primary p-3 rounded-lg hover:bg-opacity-90">My resume</button>
           </a>
-          <Link href={'#contacts'}>
-            <button className="text-base sm:text-xl text-primary bg-primary p-3 rounded-lg bg-opacity-20 hover:bg-opacity-30">Contact me</button>
-          </Link>
+          <Contact_Me/>
         </div>
 
         <RetroGrid className=""/>
