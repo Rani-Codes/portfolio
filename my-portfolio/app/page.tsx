@@ -25,15 +25,24 @@ export default function page() {
         <RetroGrid className=""/>
       </div>
 
-      <div id="experience" className="justify-center mx-10 flex py-10">
-        <div className="sm:w-10/12 lg:w-3/5 sm:border-l-2 sm:border-my_blue sm:p-4">
+      <div id="experience" className="justify-center mx-2 sm:mx-10 flex py-10">
+        <div className="w-full sm:w-10/12 lg:w-3/5 sm:border-l-2 sm:border-my_blue sm:p-4">
           <Link href={'#experience'}>
             <h1 className="text-4xl sm:text-5xl text-primary font-bold mt-4 mb-8">Experience</h1>
           </Link>
           <div className="flex flex-col gap-8">
-            <Link href={"https://www.codelabdavis.com/"} target="_blank">
+          <Link href={"https://asucd.ucdavis.edu/"} target="_blank">
+              <Experience company={"ASUCD Innovation & Research Lab"} position={"Senior Software Developer"} date="Oct 2024 - Current" logo={"/irl_logo.jpeg"}/>
+            </Link>
+
+          <Link href={"https://aggieworks.org/"} target="_blank">
+              <Experience company={"AggieWorks"} position={"Software Engineer"} date="Oct 2024 - Current" logo={"/aggieworks_logo.jpg"}/>
+            </Link>
+
+          <Link href={"https://www.codelabdavis.com/"} target="_blank">
               <Experience company={"CodeLab"} position={"Full Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
             </Link>
+
             <Link href={"https://www.grossmont.edu/"} target="_blank">
               <Experience company={"Computer Science Club, Grossmont College"} position={"President"} date="Sep 2022 - Jun 2023" logo={"/GrossmontCollege_Logo.png"}/>
             </Link>
