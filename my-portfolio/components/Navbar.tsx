@@ -11,7 +11,7 @@ const scrollToSection = (id: string) => {
 const Navbar = () => {
   return (
     <nav className="w-full flex justify-center mt-2 sm:mt-4 fixed z-20">
-      <ul className="flex justify-evenly p-2 w-full border border-secondary text-xs sm:text-sm sm:w-4/5 lg:text-base lg:w-3/5 xl:text-lg text-primary backdrop-blur bg-opacity-70 bg-white rounded sm:rounded-xl">
+      <ul className="flex justify-evenly p-2 w-11/12 border border-secondary text-xs sm:text-sm sm:w-4/5 lg:text-base lg:w-3/5 xl:text-lg text-primary backdrop-blur bg-opacity-70 bg-white rounded sm:rounded-xl">
         <li>
           <motion.button
             whileHover={{ scale: 1.1 }}

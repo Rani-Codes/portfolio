@@ -26,7 +26,6 @@ const Skills = () => {
             <li><One_Skill skill="Docker" /></li>
             <li><One_Skill skill="AWS" /></li>
             <li><One_Skill skill="Postman" /></li>
-            <li><One_Skill skill="Prisma" /></li>
             <li><One_Skill skill="SQLAlchemy" /></li>
             <li><One_Skill skill="MongoDB" /></li>
             <li><One_Skill skill="PostgreSQL" /></li>
