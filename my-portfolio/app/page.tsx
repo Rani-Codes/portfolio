@@ -71,15 +71,18 @@ export default function page() {
         <div>
           <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-left text-primary font-semibold">A Bit About Me</h1>
           <p className="text-wrap w-full p-2 text-sm sm:text-lg lg:p-0 lg:w-4/5">
-            Driven by a deep sense of curiosity about the endless applications of technology, 
-            I'm a full-stack developer with a special focus on AI/ML. I'm currently a fourth-year 
-            computer science student at the <strong>University of California, Davis</strong>, 
-            where I've taken courses such as Data Structures and Algorithms, Machine Architecture, 
-            Introduction to Artificial Intelligence, and Probability & Statistical Modeling.
+            Driven by a relentless curiosity for how technology can create impact, 
+            I'm a full-stack developer who thrives on building and shipping. I move quickly from 
+            idea to deployment, taking full ownership, making decisions independently, 
+            and delivering features that work in the real world.
             <br/><br/>
-            Outside of tech, I enjoy beach volleyball, playing guitar, video games with friends, 
-            and camping/hiking. These interests keep me balanced and grounded while I explore 
-            the fast-paced world of technology.
+            I'm a fourth-year Computer Science student at the <strong>University of California, Davis</strong>, 
+            with a strong foundation in DS&A, Machine Architecture, Artificial Intelligence, and Operating Systems. 
+            Beyond class, I've applied these skills to startup-style builds and production-ready projects 
+            with a bias toward action and a focus on user experience.
+            <br/><br/>
+            Outside of tech, I enjoy beach volleyball, playing guitar, gaming with friends, 
+            and camping or hiking. These interests keep me balanced while exploring the fast-paced world of tech.
           </p>
           <div id="contacts" className="flex flex-col justify-center md:flex-row md:my-2 md:gap-6 lg:justify-start items-center my-0 gap-0 w-full">
             <h3 className="pt-4 text-xl sm:text-2xl md:py-10 md:text-3xl font-semibold">Contact Me!</h3>
