@@ -135,7 +135,7 @@ const items = [
   {
     title: "Occurrence Trivia",
     description: "A trivia app centered around guessing the correct month and year of images taken.",
-    header: <Link href={"https://occurrence-ten.vercel.app/"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+    header: <Link href={"https://github.com/Rani-Codes/occurrence_trivia"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
                 <Image
                     src={Occurrence_App}
                     alt="Image of the todo app homepage"
