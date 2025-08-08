@@ -64,7 +64,7 @@ export default function page() {
         <h2 className="text-4xl sm:text-5xl text-primary font-bold mt-6">About Me</h2>
         </Link>
         <span className="w-1/12 my-4 border-b-4 rounded border-my_blue" />
-        <h4 className="text-sm sm:text-base md:text-lg text-secondary font-medium w-3/5 sm:w-4/5 md:w-3/5 text-center">Below you will find some more information about me as well as a highlight of some of my technical skills.</h4>
+        <h4 className="text-sm sm:text-base md:text-lg text-secondary font-medium w-3/5 sm:w-4/5 md:w-3/5 text-center">Below you'll find some more information about me as well as a highlight of some of my technical skills.</h4>
       </div>
 
       <div className="flex flex-col-reverse gap-14 lg:gap-0 lg:grid lg:grid-cols-2 lg:mx-12 xl:mx-28 2xl:mx-32 mb-28">
