@@ -32,19 +32,19 @@ export default function page() {
           </Link>
           <div className="flex flex-col gap-8">
           <Link href={"https://asucd.ucdavis.edu/"} target="_blank">
-              <Experience company={"ASUCD Innovation & Research Lab"} position={"Senior Software Developer"} date="Oct 2024 - Current" logo={"/irl_logo.jpeg"}/>
+              <Experience company={"ASUCD IRL"} position={"Lead Software Engineer"} date="Oct 2024 - Current" logo={"/irl_logo.jpeg"}/>
             </Link>
 
           <Link href={"https://aggieworks.org/"} target="_blank">
-              <Experience company={"AggieWorks"} position={"Software Engineer"} date="Oct 2024 - Current" logo={"/aggieworks_logo.jpg"}/>
+              <Experience company={"AggieWorks"} position={"Software Engineer Intern"} date="Oct 2024 - Current" logo={"/aggieworks_logo.jpg"}/>
             </Link>
 
           <Link href={"https://www.codelabdavis.com/"} target="_blank">
-              <Experience company={"CodeLab"} position={"Full Stack Software Developer"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
+              <Experience company={"CodeLab"} position={"Software Engineer Intern"} date="Oct 2023 - Jun 2024" logo={"/codelabdavis_logo.jpeg"}/>
             </Link>
 
             <Link href={"https://www.grossmont.edu/"} target="_blank">
-              <Experience company={"Computer Science Club, Grossmont College"} position={"President"} date="Sep 2022 - Jun 2023" logo={"/GrossmontCollege_Logo.png"}/>
+              <Experience company={"CS Club, Grossmont College"} position={"President"} date="Sep 2022 - Jun 2023" logo={"/GrossmontCollege_Logo.png"}/>
             </Link>
           </div>
         </div>
