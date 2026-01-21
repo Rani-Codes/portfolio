@@ -32,11 +32,11 @@ export default function page() {
           </Link>
           <div className="flex flex-col gap-8">
           <Link href={"https://asucd.ucdavis.edu/"} target="_blank">
-              <Experience company={"ASUCD IRL"} position={"Lead Software Engineer"} date="Oct 2024 - Current" logo={"/irl_logo.jpeg"}/>
+              <Experience company={"ASUCD IRL"} position={"Lead Software Engineer"} date="Oct 2024 - Dec 2025" logo={"/irl_logo.jpeg"}/>
             </Link>
 
           <Link href={"https://aggieworks.org/"} target="_blank">
-              <Experience company={"AggieWorks"} position={"Software Engineer Intern"} date="Oct 2024 - Current" logo={"/aggieworks_logo.jpg"}/>
+              <Experience company={"AggieWorks"} position={"Software Engineer Intern"} date="Oct 2024 - Dec 2025" logo={"/aggieworks_logo.jpg"}/>
             </Link>
 
           <Link href={"https://www.codelabdavis.com/"} target="_blank">
