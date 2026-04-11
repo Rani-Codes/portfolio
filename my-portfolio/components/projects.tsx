@@ -12,6 +12,14 @@ import React_Logo from "@/assets/ReactLogo.png"
 import ReactNative from "@/assets/ReactNative.svg"
 import Expo from "@/assets/Expo.png"
 import Svelte from "@/assets/svelte.png"
+import Python from '@/assets/python_logo.png'
+import Go from '@/assets/Go_logo.png'
+import GoogleCloud from '@/assets/google_cloud_logo.png'
+import Typescript from '@/assets/typescript_logo.webp'
+import Docker from '@/assets/Docker_Logo.png'
+import Convex from '@/assets/convex.svg'
+import Moss from '@/assets/moss.png'
+import Mastra from '@/assets/Mastra.png'
 import SpringBoot from "@/assets/springboot.png"
 import Jupyter_Logo from "@/assets/JupyterLogo.png"
 import FirebaseLogo from "@/assets/FirebaseLogo.png"
@@ -20,6 +28,8 @@ import Occurrence_App from '@/assets/Occurrence_App.png'
 import ScavangerHunt from '@/assets/ScavangerHunt.png'
 import Harbor from '@/assets/Harbor_App.png'
 import Co_Draw from '@/assets/Co-Draw_App.png'
+import SixthDegree from '@/assets/sixth_degree.gif'
+import CrashTest from '@/assets/crash_test.png'
 import Link from "next/link";
 
 export function BentoGridProjects() {
@@ -42,6 +52,44 @@ const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
 );
 const items = [
+
+  {
+    title: "Sixth Degree",
+    description: "Using wikipedia api and BFS to visualize social connections between influential figures, optimizing performance with Go concurrency.",
+    header: <Link href={"https://github.com/Rani-Codes/sixth_degree"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+                <Image
+                    src={SixthDegree}
+                    alt="Gif of the sixth degree search function"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
+    className: "md:col-span-2 p-2 m-3 sm:m-0",
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
+        <Image src={Go} alt="Golang logo" className="w-auto h-12" />
+        <Image src={Typescript} alt="Typescript logo" className="w-auto h-6" />
+        <Image src={Docker} alt="Docker logo" className="w-auto h-6" />
+        <Image src={GoogleCloud} alt="Google Cloud logo" className="w-auto h-12" />
+    </div>
+  },
+  {
+    title: "Crash Test",
+    description: "Multi-agent system using Mastra, Moss, and Convex to combine static analysis with live testing; hackathon project at YC office, won over $5k in prizes.",
+    header: <Link href={"https://shipyardhq.tech/projects/9ddcb5bc-5ac8-4177-bf08-ed6a8114be8c"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]">
+                <Image
+                    src={CrashTest}
+                    alt="Image of the email Crash Test sent back"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
+    className: "md:col-span-1 p-2 m-3 sm:m-0",
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
+        <Image src={Typescript} alt="Typescript logo" className="w-auto h-5" />
+        <Image src={Mastra} alt="Mastra logo" className="w-auto h-5" />
+        <Image src={Convex} alt="Convex logo" className="w-auto h-6" />
+        <Image src={Python} alt="Python logo" className="w-auto h-5" />
+        <Image src={Moss} alt="Moss logo" className="w-auto h-5" />
+    </div>
+  },
 
   {
     title: "Harbor",
@@ -115,9 +163,10 @@ const items = [
         <Image src={Jupyter_Logo} alt="Jupyter Notebook logo" className="w-auto h-8" />
     </div>
   },
+
   {
     title: "Scavenger Hunt AggieWorks",
-    description: "Developed a full stack scavanger hunt project to join AggieWorks, a product development club at UC Davis",
+    description: "Developed a full stack scavanger hunt project to join AggieWorks, a product development club at UC Davis.",
     header: <Link href={"https://github.com/Rani-Codes/scavenger-hunt-aggieworks"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]">
                 <Image
                     src={ScavangerHunt}
