@@ -30,6 +30,10 @@ import Harbor from '@/assets/Harbor_App.png'
 import Co_Draw from '@/assets/Co-Draw_App.png'
 import SixthDegree from '@/assets/sixth_degree.gif'
 import CrashTest from '@/assets/crash_test.png'
+import FifaFluka from '@/assets/FifaFluka.png'
+import LiteLLM from '@/assets/litellm.jpeg'
+import Pydantic from '@/assets/pydantic.webp'
+import MemoCheck from '@/assets/MemoCheck.png'
 import Link from "next/link";
 
 export function BentoGridProjects() {
@@ -52,6 +56,44 @@ const Skeleton = () => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl   dark:bg-dot-white/[0.2] bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-transparent dark:border-white/[0.2] bg-neutral-100 dark:bg-black"></div>
 );
 const items = [
+
+  {
+    title: "Fifa Fluka",
+    description: "A bracket simulator where a single chosen stat decides every match of the 2026 World Cup, animated as a Risk-style conquest across a hex board",
+    header: <Link href={"https://devpost.com/software/harbor-9kq0e6"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+                <Image
+                    src={FifaFluka}
+                    alt="Image of the fifa fluka app deployed"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
+    className: "md:col-span-1 p-2 m-3 sm:m-0",
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
+        <Image src={Tailwind_Logo} alt="Tailwind CSS logo" className="w-auto h-3" />
+        <Image src={NextJS_Logo} alt="Next.JS logo" className="w-auto h-3" />
+        <Image src={Typescript} alt="Typescript logo" className="w-auto h-6" />
+    </div>
+  },
+
+  {
+    title: "MemoCheck",
+    description: "An eval-driven study of how reliably LLM agents extract structured intent from real-world voice memo transcripts.",
+    header: <Link href={"https://memocheck.ranisaro.com/"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+                <Image
+                    src={MemoCheck}
+                    alt="Image of the memocheck write-up"
+                    className="flex flex-1 w-full h-full min-h-[6rem]"
+                    />
+            </Link>,
+    className: "md:col-span-2 p-2 m-3 sm:m-0",
+    icon: <div className="flex flex-wrap gap-2 items-center justify-center">
+        <Image src={Python} alt="Python logo" className="w-auto h-8" />
+        <Image src={PostgreSQL_Logo} alt="PostgreSQL logo" className="w-auto h-6" />
+        <Image src={LiteLLM} alt="LiteLLM logo" className="w-auto h-6" />
+        <Image src={Pydantic} alt="Pydantic logo" className="w-auto h-6" />
+
+    </div>
+  },
 
   {
     title: "Sixth Degree",
