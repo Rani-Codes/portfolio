@@ -60,7 +60,7 @@ const items = [
   {
     title: "Fifa Fluka",
     description: "A bracket simulator where a single chosen stat decides every match of the 2026 World Cup, animated as a Risk-style conquest across a hex board",
-    header: <Link href={"https://devpost.com/software/harbor-9kq0e6"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
+    header: <Link href={"https://fifafluka.pages.dev/"} target="_blank" className="flex flex-1 w-full h-full min-h-[6rem]" >
                 <Image
                     src={FifaFluka}
                     alt="Image of the fifa fluka app deployed"
